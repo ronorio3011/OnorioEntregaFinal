@@ -1,0 +1,317 @@
+@mixin alineacion($justify,$aling) {
+  justify-self: $justify;
+  align-self: $aling;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url(/img/maderas.jpg);
+  background-size: cover;
+}
+header{
+  display: grid;
+  grid-template-columns: 350px 600px 300px 50px;
+  grid-template-rows: 300px;
+  grid-template-areas: " logo letras carrito perfil";
+
+}
+.cardtexto{
+  background-color: rgba(195, 211, 211, 0.493);
+}
+.historia{
+  margin-top: 2.5%;
+}
+.logo{
+  grid-area: logo;
+}
+.letras{
+  grid-area: letras;
+  @include alineacion(center,center );
+}
+a{
+  @include alineacion(end,center);
+  .carrito{
+  grid-area: carrito; 
+  }
+}
+a{
+  @include alineacion(none,center);
+  .perfil{
+  grid-area: perfil;
+  }
+}
+nav{
+  background: rgba(190, 176, 176, 0.849);
+  width: 100%;
+  padding-left: 33%;
+  font-size: large;
+}
+.pollo{
+  width: 250px;
+}
+.pechuga{
+  @extend .pollo;
+}
+.integrantes{
+  display: flex;
+  justify-content: space-around;
+}
+.box{
+  margin-bottom: 5%;
+}
+.boxcard1{
+  border-style:groove;
+  width: 15rem;
+}
+.boxcard2{
+  @extend .boxcard1;
+}
+.boxcard3{
+  @extend .boxcard1;
+}
+footer{
+  color: rgb(10, 10, 10);
+  background: rgba(190, 176, 176, 0.849);
+  display: grid;
+  grid-template-columns: 450px 500px 200px 200px;
+  grid-template-rows: 300px;
+  grid-template-areas: "contacto log info redes";
+ 
+}
+.contacto{
+  grid-area: contacto;
+  @include alineacion(none,center);
+  padding-left: 5%;
+  margin: 10%;
+}
+.log{
+  grid-area: log;
+  @include alineacion(none,center);
+  width: 90%;
+ 
+}
+.info{
+  grid-area: info; 
+  @include alineacion(none,center);
+  padding-left: 5%;
+  margin: 10%;
+  }
+.redes{
+  grid-area: redes;
+   @include alineacion(none,end);
+   font-size: smaller;
+   padding-left: 10%;
+  margin: 10%;
+  }
+.card-text{
+  font-size: 120%;
+  color: rgb(0, 0, 0);
+}
+.img{
+  border-radius: 10%;
+}
+.btn-whatsapp {
+        display:block;
+        width:10px;
+        height:10px;
+        position: fixed;
+        right: 100px;
+        bottom:10px;
+        border-radius:50%;
+        line-height:80px;
+        text-align:center;
+        z-index:999;
+}
+form{
+  border-radius: 5%;
+  background-color: rgba(240, 233, 233, 0.308);
+  }
+.registrar{
+  @extend form
+}
+.formu{
+  display: flex;
+}
+.historia{
+   @extend .formu;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.textohistoria{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 5%;
+    padding-right: 15%;
+    font-size: medium;
+    background-color: rgba(195, 211, 211, 0.493);
+  }
+  .carro{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .elaboracion{
+    @extend .formu;
+  }
+ 
+ .card1{
+   background-color: rgba(240, 248, 255, 0.164);
+ }
+ .card2{
+   @extend .card1;
+ }
+ .card3{
+    @extend .card1;
+
+ }
+ .card4{
+   @extend .card1;
+ }
+ .card5{
+    @extend .card1;
+ }
+ .card6{
+    @extend .card1;
+ }
+.elaboracion{
+  width:auto;
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.generalproductos :hover{
+  opacity: 3;
+  display: grid;
+}
+.wrap{
+    margin:0 auto;
+    width:1000px;
+}
+.eroror404{
+  text-align: center;
+}
+.error1{
+    text-align:center;
+}   
+.error1 p span{
+    color:lightgreen;
+} 
+.sub a{
+    color:white;
+    background:rgba(0,0,0,0.3);
+    text-decoration:none;
+    padding:5px 10px;
+    font-size:13px;
+    font-family: arial, serif;
+    font-weight:bold;
+}   
+.redes a {
+  text-decoration: none;
+  color: black;
+}
+.info a {
+   text-decoration: none;
+   color: black;
+}
+.contacto a{
+   text-decoration: none;
+   color: black;
+}
+h2{
+  font-family: 'Bree Serif', serif;
+}
+h4{
+  font-family: 'Bree Serif', serif;
+}
+.generalproductos{
+   justify-content: space-between;
+   padding-left: 15%;
+   margin-bottom: 1%;
+   display: grid;
+   gap: 1rem;
+   grid-auto-rows: 25rem;
+   grid-template-columns: repeat(auto-fill, minmax(30rem,100fr));
+ }
+@media screen and ( min-width:414px) and (max-width:896px){
+  header{
+    width: 200%;
+    display: grid;
+    grid-template-columns: 450px;
+    grid-template-rows: 250px;
+    grid-template-areas: " logo";
+  }
+  .logo{
+  width: 100%;
+  padding: 10%;
+  margin-top: 20%;
+  margin-right: 20%;
+  margin-bottom: 20%;
+}
+.letras{
+  grid-area: titulo;
+  text-align: center;
+  font-size: medium;
+  padding-left: 250%;
+  display: none;
+}
+a{
+  @include alineacion(end,center);
+  .carrito{
+  display: none; 
+  }
+}
+a{
+  @include alineacion(none,center);
+  .perfil{
+  display: none;
+  }
+}
+
+footer{
+  color: rgb(10, 10, 10);
+  background: rgba(190, 176, 176, 0.849);
+  display: grid;
+  grid-template-columns: 200px 180px;
+  grid-template-rows: 200px 200px;
+  grid-template-areas: "contacto log "
+                        "info redes";
+}
+.contacto{
+  grid-area: contacto;
+  width: 50%;
+  margin-top: 10%;
+  @include alineacion(none,center);
+  font-size:x-small;
+}
+.log{
+  grid-area: log;
+  @include alineacion(center,center);
+  width: 100%;
+  margin-bottom: 5%;
+}
+.info{
+  grid-area: info; 
+  @include alineacion(none,center);
+  font-size:x-small;
+  }
+.redes{
+  grid-area: redes;
+   font-size:xx-small;
+  }
+  .formu{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .fcontacto{
+    margin-right: 50%;
+  }
+ .elaboracion{
+  width:auto;
+  padding: 5%;
+  margin-left: 20%;
+  display: flex;
+  justify-content: space-between;
+  }
+}

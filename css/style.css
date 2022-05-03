@@ -1,0 +1,429 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url(/img/maderas.jpg);
+  background-size: cover;
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 350px 600px 300px 50px;
+      grid-template-columns: 350px 600px 300px 50px;
+  -ms-grid-rows: 300px;
+      grid-template-rows: 300px;
+      grid-template-areas: " logo letras carrito perfil";
+}
+
+.cardtexto {
+  background-color: rgba(195, 211, 211, 0.493);
+}
+
+.historia {
+  margin-top: 2.5%;
+}
+
+.logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
+}
+
+.letras {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: letras;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+a {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+a .carrito {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: carrito;
+}
+
+a {
+  -ms-grid-column-align: none;
+      justify-self: none;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+a .perfil {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: perfil;
+}
+
+nav {
+  background: rgba(190, 176, 176, 0.849);
+  width: 100%;
+  padding-left: 33%;
+  font-size: large;
+}
+
+.pollo, .pechuga {
+  width: 250px;
+}
+
+.integrantes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.box {
+  margin-bottom: 5%;
+}
+
+.boxcard1, .boxcard2, .boxcard3 {
+  border-style: groove;
+  width: 15rem;
+}
+
+footer {
+  color: #0a0a0a;
+  background: rgba(190, 176, 176, 0.849);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 450px 500px 200px 200px;
+      grid-template-columns: 450px 500px 200px 200px;
+  -ms-grid-rows: 300px;
+      grid-template-rows: 300px;
+      grid-template-areas: "contacto log info redes";
+}
+
+.contacto {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: contacto;
+  -ms-grid-column-align: none;
+      justify-self: none;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 5%;
+  margin: 10%;
+}
+
+.log {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: log;
+  -ms-grid-column-align: none;
+      justify-self: none;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 90%;
+}
+
+.info {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: info;
+  -ms-grid-column-align: none;
+      justify-self: none;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 5%;
+  margin: 10%;
+}
+
+.redes {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: redes;
+  -ms-grid-column-align: none;
+      justify-self: none;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  font-size: smaller;
+  padding-left: 10%;
+  margin: 10%;
+}
+
+.card-text {
+  font-size: 120%;
+  color: black;
+}
+
+.img {
+  border-radius: 10%;
+}
+
+.btn-whatsapp {
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: fixed;
+  right: 100px;
+  bottom: 10px;
+  border-radius: 50%;
+  line-height: 80px;
+  text-align: center;
+  z-index: 999;
+}
+
+form, .registrar {
+  border-radius: 5%;
+  background-color: rgba(240, 233, 233, 0.308);
+}
+
+.formu, .historia, .elaboracion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.historia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.textohistoria {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 5%;
+  padding-right: 15%;
+  font-size: medium;
+  background-color: rgba(195, 211, 211, 0.493);
+}
+
+.carro {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.card1, .card2, .card3, .card4, .card5, .card6 {
+  background-color: rgba(240, 248, 255, 0.164);
+}
+
+.elaboracion {
+  width: auto;
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.generalproductos :hover {
+  opacity: 3;
+  display: -ms-grid;
+  display: grid;
+}
+
+.wrap {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.eroror404 {
+  text-align: center;
+}
+
+.error1 {
+  text-align: center;
+}
+
+.error1 p span {
+  color: lightgreen;
+}
+
+.sub a {
+  color: white;
+  background: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 13px;
+  font-family: arial, serif;
+  font-weight: bold;
+}
+
+.redes a {
+  text-decoration: none;
+  color: black;
+}
+
+.info a {
+  text-decoration: none;
+  color: black;
+}
+
+.contacto a {
+  text-decoration: none;
+  color: black;
+}
+
+h2 {
+  font-family: 'Bree Serif', serif;
+}
+
+h4 {
+  font-family: 'Bree Serif', serif;
+}
+
+.generalproductos {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 15%;
+  margin-bottom: 1%;
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 25rem;
+  -ms-grid-columns: (minmax(30rem, 100fr)),[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(30rem, 100fr));
+}
+
+@media screen and (min-width: 414px) and (max-width: 896px) {
+  header {
+    width: 200%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 450px;
+        grid-template-columns: 450px;
+    -ms-grid-rows: 250px;
+        grid-template-rows: 250px;
+        grid-template-areas: " logo";
+  }
+  .logo {
+    width: 100%;
+    padding: 10%;
+    margin-top: 20%;
+    margin-right: 20%;
+    margin-bottom: 20%;
+  }
+  .letras {
+    grid-area: titulo;
+    text-align: center;
+    font-size: medium;
+    padding-left: 250%;
+    display: none;
+  }
+  a {
+    -ms-grid-column-align: end;
+        justify-self: end;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  a .carrito {
+    display: none;
+  }
+  a {
+    -ms-grid-column-align: none;
+        justify-self: none;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  a .perfil {
+    display: none;
+  }
+  footer {
+    color: #0a0a0a;
+    background: rgba(190, 176, 176, 0.849);
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 200px 180px;
+        grid-template-columns: 200px 180px;
+    -ms-grid-rows: 200px 200px;
+        grid-template-rows: 200px 200px;
+        grid-template-areas: "contacto log "
+ "info redes";
+  }
+  .contacto {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: contacto;
+    width: 50%;
+    margin-top: 10%;
+    -ms-grid-column-align: none;
+        justify-self: none;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: x-small;
+  }
+  .log {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: log;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .info {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: info;
+    -ms-grid-column-align: none;
+        justify-self: none;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: x-small;
+  }
+  .redes {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: redes;
+    font-size: xx-small;
+  }
+  .formu, .historia, .elaboracion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .fcontacto {
+    margin-right: 50%;
+  }
+  .elaboracion {
+    width: auto;
+    padding: 5%;
+    margin-left: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+/*# sourceMappingURL=style.css.map */
